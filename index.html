@@ -1,114 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram</title>
+    <title>Instagram - LexpinOnline</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+
+    <!-- HEADER / NAVBAR -->
     <header class="header">
-      <div>
+      <div class="header-left">
         <img src="./img/arrow.png" alt="back-arrow" />
       </div>
-      <div>
+      <div class="header-center">
         <h1 class="title">lexpinonline</h1>
+      </div>
+      <div class="header-right">
+        <span class="menu-dots"></span>
       </div>
     </header>
 
-    <aside class="menu-left">
-      <ul>
-        <li class="home">Home</li>
-        <li class="search">Search</li>
-        <li class="explore">explore</li>
-        <li class="reels">reels</li>
-        <li class="messages">messages</li>
-        <li class="notifications">notifications</li>
-        <li class="create">create</li>
-        <li class="panel">panel</li>
-        <li class="photo">Profile</li>
-        <li class="futher">futher</li>
-      </ul>
-    </aside>
+    <!-- LAYOUT PRINCIPAL -->
+    <div class="layout">
 
-    <main class="profile">
-      <section class="lexpin">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZjTUzloxImmwQ15Gjc5cm0MQBqMCb9xNfw&s"
-          alt="logo"
-        />
-      </section>
+      <!-- ASIDE LATERAL (ESCRITORIO) -->
+      <aside class="menu-left">
+        <ul>
+          <li class="home">Home</li>
+          <li class="search">Search</li>
+          <li class="explore">Explore</li>
+          <li class="reels">Reels</li>
+          <li class="messages">Messages</li>
+          <li class="notifications">Notifications</li>
+          <li class="create">Create</li>
+          <li class="panel">Panel</li>
+          <li class="photo">Profile</li>
+          <li class="further">Further</li>
+        </ul>
+      </aside>
 
-      <div class="data-right-column">
-        <section class="info-section">
-          <div class="data">
-            <div class="username-container">
+      <!-- CONTENIDO PRINCIPAL -->
+      <main class="profile-page">
+
+        <!-- PERFIL -->
+        <section class="profile-header">
+          <div class="profile-picture">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPZjTUzloxImmwQ15Gjc5cm0MQBqMCb9xNfw&s" alt="Logo perfil" />
+          </div>
+          <div class="profile-info">
+            <div class="username-row">
               <h1>lexpinonline</h1>
               <span class="menu-dots">...</span>
             </div>
             <div class="stats-row">
-              <div class="stat-item">
-                <span class="number">231</span>
-                <span class="tag">publicaciones</span>
-              </div>
-              <div class="stat-item">
-                <span class="number">16,9 mil</span>
-                <span class="tag">seguidores</span>
-              </div>
-              <div class="stat-item">
-                <span class="number">36</span>
-                <span class="tag">seguidos</span>
-              </div>
+              <div class="stat-item"><span class="number">231</span> publicaciones</div>
+              <div class="stat-item"><span class="number">16,9 mil</span> seguidores</div>
+              <div class="stat-item"><span class="number">36</span> seguidos</div>
             </div>
+            <div class="bio">
+              <p class="name">LEXPIN | Cursos Online</p>
+              <p class="category">Educación</p>
+              <p>¡Nos dedicamos a formarte en diseño y programación web! Síguenos</p>
+              <p class="link"><a href="#">wa.link/B5ijzd</a></p>
+              <p>@lexpinonline</p>
+            </div>
+            <div class="actions-row">
+              <button class="btn-primary">Following</button>
+              <button class="btn-secondary">Send message</button>
+              <button class="btn-tertiary">+</button>
+            </div>  
           </div>
         </section>
 
-        <section>
-          <div class="actions-section">
-            <button class="btn-primary">
-              Following <span class="down-arrow">v</span>
-            </button>
-            <button class="btn-secondary">Send message</button>
-            <button class="btn-tertiary">+</button>
-          </div>
+        <!-- DESTACADOS / HIGHLIGHTS -->
+        <nav class="highlights">
+          <div class="highlight">Story 1</div>
+          <div class="highlight">Story 2</div>
+          <div class="highlight">Story 3</div>
+          <div class="highlight">Story 4</div>
+        </nav>
 
-          <div class="bio-section">
-            <p class="name">LEXPIN | Cursos Online</p>
-            <p class="category">Educación</p>
-            <p class="name">VECOCLAR</p>
-            <p>
-              ¡Nos dedicamos a formarte en diseño y programación web! Síguenos
-            </p>
-            <p class="link">
-              <a href="#">wa.link/B5ijzd y 2 más</a>
-            </p>
-            <p>@lexpinonline</p>
-          </div>
+        <!-- FEED / POSTS -->
+        <section class="feed">
+          <div class="post"><img src="./img/post1.png" alt="Post 1" /></div>
+          <div class="post"><img src="./img/post2.png" alt="Post 2" /></div>
+          <div class="post"><img src="./img/post3.png" alt="Post 3" /></div>
+          <div class="post"><img src="./img/post4.png" alt="Post 4" /></div>
+          <div class="post"><img src="./img/post5.png" alt="Post 5" /></div>
+          <div class="post"><img src="./img/post6.png" alt="Post 6" /></div>
         </section>
-      </div>
 
-      <nav class="hightlights"></nav>
+      </main>
 
-      <section class="feed">
-        <div class="video-card">
-          <img src="./img/post1.png" class="post-img" alt="" />
-        </div>
-        <div class="video-card">
-          <img src="./img/post2.png" class="post-img" alt="" />
-        </div>
-        <div class="video-card">
-          <img src="./img/post3.png" class="post-img" alt="" />
-        </div>
-        <div class="video-card">
-          <img src="./img/post4.png" class="post-img" alt="" />
-        </div>
-        <div class="video-card">
-          <img src="./img/post5.png" class="post-img" alt="" />
-        </div>
-        <div class="video-card">
-          <img src="./img/post6.png" class="post-img" alt="" />
-        </div>
-      </section>
-    </main>
+    </div>
+
+    <!-- ASIDE INFERIOR (MÓVIL) -->
+    <aside class="menu-bottom">
+      <ul>
+        <li>Inicio</li>
+        <li>Buscar</li>
+        <li>Reels</li>
+        <li>Perfil</li>
+      </ul>
+    </aside>
+
   </body>
 </html>
