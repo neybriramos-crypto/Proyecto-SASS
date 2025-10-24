@@ -197,10 +197,12 @@ body {
   .highlights .highlight {
     width: 70px;
     height: 70px;
-    font-size: 11px;
+    font-size: 10px;
   }
   .feed .post img {
     border-radius: 4px;
+    height: 16px;
+    width: 18px;
   }
 }
 @media (max-width: 768px) {
