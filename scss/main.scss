@@ -1,0 +1,22 @@
+@use "utils/variables" as *;
+@use "utils/mixins" as mix;
+
+// UTILS
+@import "utils/variables";
+@import "utils/mixins";
+
+// BASE
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+
+// LAYOUTS
+@import "layouts/header";
+@import "layouts/content";
+@import "layouts/footer";
+
+// COMPONENTS
+@import "components/buttons";
+
+// PAGES
+@import "pages/profile";

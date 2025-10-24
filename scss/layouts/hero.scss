@@ -1,0 +1,22 @@
+@use "./../utils/mixins" as mix;
+@use "./../utils/variables" as vars;
+
+.lexpin {
+  @include mix.flex-column(center, center);
+  background-color: vars.$primary-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 20px;
+
+  img {
+    max-width: 90px;
+    height: 90px;
+    margin-left: 20px;
+    border-radius: 100%;
+  }
+
+  p{
+    color: white;
+  }
+}

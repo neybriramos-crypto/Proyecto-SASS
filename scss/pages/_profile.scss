@@ -1,0 +1,85 @@
+.username-container {
+  @include flex-center(10px);
+  align-items: center;
+  margin-bottom: 15px;
+
+  h1 {
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  .menu-dots {
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+.stats-row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 15px;
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .number {
+      font-weight: bold;
+    }
+  }
+}
+
+.bio-section {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+  a {
+    color: $accent-color;
+    text-decoration: none;
+  }
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  border-top: 1px solid $border-color;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 935px;
+  margin: 30px auto 0 auto;
+
+  // 👇 Estas tres líneas son la clave
+  flex-basis: 100%;  // Ocupa todo el ancho dentro del flex
+  width: 100%;       // Se asegura de extenderse
+  align-self: flex-start; // Se alinea al inicio
+  order: 99;         // Se va al final del flex container
+
+  .video-card {
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
