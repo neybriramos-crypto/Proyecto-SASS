@@ -107,19 +107,6 @@
   }
 }
 
-.feed{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-
-  .post{
-    img{
-      width: 100%;
-      border-radius: 5px;
-    }
-  }
-}
-
 @media(max-width: 1024px){
   .profile-header{
     .profile-picture{
@@ -137,11 +124,6 @@
     font-size: 10px;
   }
 
-  .feed .post img{
-    border-radius: 4px;
-    height: 16px;
-    width: 18px;
-  }
 }
 
 @media (max-width: 768px){
