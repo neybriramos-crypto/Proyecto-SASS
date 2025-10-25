@@ -1,36 +1,43 @@
 .feed {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-}
-.feed .post {
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.feed .post:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 12px #000;
-}
-.feed .post img {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2px;
   width: 100%;
-  height: auto;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: inherit;
+  background-color: #000;
+  margin-top: 20px;
 }
 
-@media (max-width: 1024px) {
+.feed .post {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.feed .post img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+@media (min-width: 1025px) {
   .feed {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 8px;
+    max-width: 935px;
+    margin: 40px auto;
   }
 }
 @media (max-width: 1024px) {
   .feed {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 6px;
+    max-width: 100%;
+    gap: 2px;
+  }
+}
+@media (max-width: 480px) {
+  .feed {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
   }
 }/*# sourceMappingURL=feed.css.map */
