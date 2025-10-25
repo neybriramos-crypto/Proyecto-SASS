@@ -1,0 +1,65 @@
+@use "./../utils/mixins" as mix;
+@use "./../utils/variables" as vars;
+
+// .feed {
+//   display: grid;
+//   grid-template-columns: repeat(3, minmax(0, 1fr));
+//   gap: 2px;
+//   width: 100%;
+//   background-color: #000;
+//   margin-top: 20px;
+
+//   .post {
+//     position: relative;
+//     width: 100%;
+//     overflow: hidden;
+//     background-color: #000;
+
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//       display: block;
+//     }
+//   }
+// }
+
+// @media (min-width: 1025px) {
+//   .feed {
+//     max-width: 935px;
+//     margin: 40px auto;
+//   }
+// }
+
+// @media (max-width: 1024px) {
+//   .feed {
+//     max-width: 100%;
+//     gap: 2px;
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .feed {
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 1px;
+//   }
+// }
+
+.feed {
+  @include mix.grid(none, 1fr, 0.25rem);
+
+  .post {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .feed {
+    @include mix.grid(none, repeat(3, 1fr), 0.25rem);
+  }
+}

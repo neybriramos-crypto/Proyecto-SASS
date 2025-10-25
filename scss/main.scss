@@ -2,21 +2,23 @@
 @use "utils/mixins" as mix;
 
 // UTILS
-@import "utils/variables";
-@import "utils/mixins";
+@use "utils/variables";
+@use "utils/mixins";
 
 // BASE
-@import "base/reset";
-@import "base/base";
-@import "base/typography";
+@use "base/reset";
+@use "base/base";
+@use "base/typography";
 
 // LAYOUTS
-@import "layouts/header";
-@import "layouts/content";
-@import "layouts/footer";
+@use "layouts/aside";
+@use "layouts/header";
+@use "layouts/content";
+@use "layouts/feed";
+@use "layouts/footer";
 
 // COMPONENTS
-@import "components/buttons";
+@use "components/buttons";
 
 // PAGES
-@import "pages/profile";
+@use "pages/profile";

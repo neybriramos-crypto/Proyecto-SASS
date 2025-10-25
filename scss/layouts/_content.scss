@@ -1,11 +1,7 @@
 .profile-page{
-  max-width: 935px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
   background-color: #000;
 
 }
@@ -107,20 +103,28 @@
   }
 }
 
-.feed{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+@media only screen and (min-width: 768px){
+  .profile-page{
+    margin: 0 15%;
+  }
 
-  .post{
-    img{
-      width: 100%;
-      border-radius: 5px;
+  .profile-header{
+    .profile-picture{
+      width: 25%;
     }
+    .profile-info{
+      font-size: 12px;
+    }
+  }
+
+  .highlights .highlight{
+    width:60px;
+    height: 60px;
+    font-size: 10px;
   }
 }
 
-@media(max-width: 1024px){
+@media only screen and (min-width: 992px){
   .profile-header{
     .profile-picture{
       width: 20%;
@@ -136,44 +140,10 @@
     height: 70px;
     font-size: 10px;
   }
-
-  .feed .post img{
-    border-radius: 4px;
-    height: 16px;
-    width: 18px;
-  }
 }
 
-@media (max-width: 768px){
-  .profile-header{
-    .profile-picture{
-      width: 25%;
-    }
-    .profile-info{
-      font-size: 12px;
-    }
-  }
-
-  .highlights .highlight{
-    width:60px;
-    height: 60px;
-    font-size: 10px;
-  }
-
-  .feed .post img{
-    border-radius: 3px;
-  }
-}
-
-@media (min-width:1024px){
-  .profile-page{
-    margin-left: 250px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .profile-page {
-    margin-left: 245px;
-    align-items: flex-start;
-  }
-}
+// @media (min-width: 1025px) {
+//   .profile-page {
+//     align-items: flex-start;
+//   }
+// }
