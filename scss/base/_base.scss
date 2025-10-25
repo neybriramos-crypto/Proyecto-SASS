@@ -1,3 +1,6 @@
+@use "./../utils/variables" as vars;
+@use "./../utils/mixins" as mix;
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +9,22 @@
 }
 
 body {
-  background-color: $primary-color;
-  color: $text-color;
-  font-family: $font-family;
+  background-color: vars.$primary-color;
+  color: vars.$text-color;
+  font-family: vars.$font-family;
+}
+
+main {
+  padding: 1rem 0;
+}
+
+.layout {
+  @include mix.flex-column(center, center, 1rem);
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .layout {
+    @include mix.flex-row(center, flex-start, 1rem);
+  }
 }

@@ -1,13 +1,15 @@
-@mixin flex-row($justify: start, $align: flex-start, $gap: 1rem) {
+@mixin flex-row($justify: flex-start, $align: flex-start, $gap: 1rem) {
   display: flex;
   flex-direction: row;
   justify-content: $justify;
   align-items: $align;
   gap: $gap;
 }
-@mixin flex-column($justify: start, $gap: 1rem) {
+@mixin flex-column($justify: flex-start, $align: flex-start, $gap: 1rem) {
   display: flex;
   flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;  
   gap: $gap;
 }
 
@@ -29,7 +31,7 @@
   gap: $gap;
 }
 
-@mixin button($bg, $color) {
+@mixin button($bg, $color, $radius: 8px) {
   background-color: $bg;
   color: $color;
   border: none;
