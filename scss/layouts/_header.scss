@@ -1,6 +1,6 @@
 @use "./../utils/mixins" as mix;
 
-.header{
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,37 +13,37 @@
   z-index: 100;
 }
 
-.header-left{
+.header-left {
   flex: 0 0 auto;
 }
 
-.header-center{
+.header-center {
   flex: 1 1 auto;
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-.header-right{
+.header-right {
   flex: 0 0 auto;
 }
 
-.title{
+.title {
   margin: 0;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
 }
 
-.back-btn{
+.back-btn {
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
 }
 
-@media (min-width: 1024px){
-  .header{
+@media (min-width: 1024px) {
+  .header {
     display: none;
   }
 }

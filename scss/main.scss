@@ -11,10 +11,11 @@
 @use "base/typography";
 
 // LAYOUTS
+@use "layouts/aside";
 @use "layouts/header";
 @use "layouts/content";
-@use "layouts/footer";
 @use "layouts/feed";
+@use "layouts/footer";
 
 // COMPONENTS
 @use "components/buttons";
