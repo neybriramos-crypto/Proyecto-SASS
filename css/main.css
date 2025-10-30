@@ -64,14 +64,8 @@ main {
     font-weight: 500;
     border-radius: 8px;
   }
-  .menu-left ul .menu-item:hover {
-    background-color: #f2f2f2;
-  }
   .menu-left ul .menu-item .icon {
     font-size: 20px;
-  }
-  .menu-left ul .menu-item .text {
-    display: none;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -100,9 +94,6 @@ main {
     cursor: pointer;
     font-weight: 500;
     border-radius: 8px;
-  }
-  ul .menu-item:hover {
-    background-color: #f2f2f2;
   }
   ul .menu-item .icon {
     font-size: 20px;

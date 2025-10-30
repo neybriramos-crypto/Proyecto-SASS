@@ -29,16 +29,12 @@
         font-weight: 500;
         border-radius: 8px;
 
-        &:hover {
-          background-color: #f2f2f2;
-        }
-
         .icon {
           font-size: 20px;
         }
 
         .text {
-          display: none;
+          
         }
       }
     }
@@ -71,11 +67,7 @@
       cursor: pointer;
       font-weight: 500;
       border-radius: 8px;
-
-      &:hover {
-        background-color: #f2f2f2;
-      }
-
+    
       .icon {
         font-size: 20px;
       }
