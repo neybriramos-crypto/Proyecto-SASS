@@ -1,3 +1,5 @@
+@use "./../utils/mixins" as mix;
+
 .menu-left {
   display: none;
 }
@@ -34,7 +36,7 @@
         }
 
         .text {
-          
+          display: none;
         }
       }
     }

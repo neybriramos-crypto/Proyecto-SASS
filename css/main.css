@@ -67,6 +67,9 @@ main {
   .menu-left ul .menu-item .icon {
     font-size: 20px;
   }
+  .menu-left ul .menu-item .text {
+    display: none;
+  }
 }
 @media only screen and (min-width: 992px) {
   .menu-left {
@@ -261,7 +264,7 @@ main {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: #eee;
+  background: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -321,48 +324,49 @@ main {
     gap: 0.25rem;
   }
 }
+.menu-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #000000;
+  border-top: 1px solid #ddd;
+  z-index: 100;
+}
+.menu-bottom ul {
+  display: flex;
+  position: sticky;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-bottom ul li {
+  flex: 1;
+  text-align: center;
+}
+.menu-bottom ul li img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.menu-bottom ul li img:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 992px) {
+  .footer {
+    display: none;
+  }
+}
 #btn-back {
   width: 45px;
   height: 45px;
-}
-
-.actions-section {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-.actions-section .btn-primary {
-  background-color: #262626;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  padding: 6px 15px;
-}
-.actions-section .btn-secondary {
-  background-color: #262626;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  padding: 6px 15px;
-}
-.actions-section .btn-tertiary {
-  background-color: #262626;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 14px;
-  cursor: pointer;
-  padding: 6px 15px;
-  width: 35px;
-  height: 35px;
-  text-align: center;
 }
 
 .username-container {

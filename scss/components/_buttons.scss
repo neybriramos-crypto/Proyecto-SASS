@@ -5,23 +5,3 @@
   width: 45px;
   height: 45px;
 }
-.actions-section {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
-
-  .btn-primary {
-    @include mix.button(vars.$border-color, vars.$text-color);
-  }
-
-  .btn-secondary {
-    @include mix.button(vars.$border-color, vars.$text-color);
-  }
-
-  .btn-tertiary {
-    @include mix.button(vars.$border-color, vars.$text-color);
-    width: 35px;
-    height: 35px;
-    text-align: center;
-  }
-}

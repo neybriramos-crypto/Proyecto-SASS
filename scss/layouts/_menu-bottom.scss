@@ -1,6 +1,4 @@
-.footer{
-  position: sticky;
-}
+@use "./../utils/mixins" as mix;
 
 .menu-bottom {
   bottom: 0;
@@ -13,6 +11,7 @@
 
   ul {
     display: flex;
+    position: sticky;
     justify-content: space-around;
     align-items: center;
     height: 100%;
